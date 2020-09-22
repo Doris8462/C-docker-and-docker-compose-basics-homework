@@ -18,6 +18,6 @@ public class AliceController {
     @ResponseStatus(HttpStatus.OK)
     public String hello(RestTemplate restTemplate) {
 
-        return restTemplate.getForObject("http://localhost:8081/hello", String.class);
+        return restTemplate.getForObject("http://bob:8081/hello", String.class);
     }
 }
